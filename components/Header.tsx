@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Header() {
     return (
-        <header className='border-b-2 border-shadow-sm'>
+        <header className='border-b-2 border-shadow-sm sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200'>
             <div className='flex items-center space-x-5 justify-between p-5 max-w-6xl mx-auto'>
                 <Link href="/" passHref>
                     <Image className='w-40 object-contain cursor-pointer' src="/medium.svg" alt="Medium Logo" width={161} height={24} />
@@ -15,7 +15,7 @@ function Header() {
                         <h3 className='cursor-pointer'>Write</h3>
                     </div>
                     <div className='flex space-x-5 items-center text-sm'>
-                        <h3 className='cursor-pointer'>Sign In</h3>
+                        <h3 className='cursor-pointer md:inline-flex hidden'>Sign In</h3>
                         <h3 className='cursor-pointer bg-black text-white rounded-full px-5 py-2 flex items-center justify-center'>Get started</h3>
                     </div>
                 </div>
